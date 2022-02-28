@@ -1,11 +1,11 @@
 const express = require("express");
-//const ConnectDB = require("./Utility/ConnectDB");
+const ConnectDB = require("./Utility/ConnectDB");
 const app = express();
 const PORT = 5000 || process.env.PORT;
 require("dotenv").config();
 // To use JSON With Express we will use middleware
 app.use(express.json());
-//ConnectDB();
+ConnectDB();
 
 //app.use("/api", require("./routes/api"));
 
