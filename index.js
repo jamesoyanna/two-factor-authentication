@@ -7,7 +7,7 @@ require("dotenv").config();
 app.use(express.json());
 ConnectDB();
 
-//app.use("/api", require("./routes/api"));
+app.use("/api", require("./routes/api"));
 
 // now lets connect our database
 
