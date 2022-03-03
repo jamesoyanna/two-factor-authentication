@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import './Form.css';
 
 const Login = () => {
   const [data, setData] = useState({ username: "", password: "" });
@@ -61,6 +60,18 @@ const Login = () => {
           <button className={twoFactorCode.trim().length < 6 ? "form-submit disabled" : "form-submit"} disabled={twoFactorCode.trim().length < 6 ? !0 : !1} onClick={finishLogin}>
             Login
           </button>
+          {/* <div className="input-group">
+            <span className="placeholder">Username</span>
+            <input type="text" className="form-input" value={data.username} onChange={(e) => setData({ ...data, username: e.target.value })} />
+          </div>
+          <div className="input-group">
+            <span className="placeholder">Password</span>
+            <input type="password" className="form-input" value={data.password} onChange={(e) => setData({ ...data, password: e.target.value })} />
+          </div>
+          <div className="form-error-container"></div>
+          <button className="form-submit" onClick={handleSubmit}>
+            Login
+          </button> */}
         </div>
       </div>
     </>
